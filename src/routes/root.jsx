@@ -81,6 +81,7 @@ const root = () => {
                     ) : (
                       <i>No Name</i>
                     )}
+                    {contact.favorite && <span>★</span>}
                   </NavLink>
                 </li>
               ))}
