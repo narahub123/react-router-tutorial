@@ -43,7 +43,7 @@ const Contact = () => {
           </Form>
           <Form
             method="post"
-            action="distroy"
+            action="destroy"
             onSubmit={(event) => {
               if (!confirm("Please confirm you want to delete this record")) {
                 event.preventDefault();
