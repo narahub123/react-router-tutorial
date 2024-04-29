@@ -11,6 +11,7 @@ import ErrorPage from "./ErrorPage";
 import Contact, { loader as contactLoader } from "./routes/Contact";
 import EditContact, { action as editAction } from "./routes/Edit";
 import { action as deleteAction } from "./routes/destroy";
+import Index from "./routes";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     loader: rootLoader,
     action: rootAction,
     children: [
+      { index: true, element: <Index /> },
       {
         path: "/contacts/:contactId",
         element: <Contact />,
