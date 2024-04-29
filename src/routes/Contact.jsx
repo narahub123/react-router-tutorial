@@ -5,7 +5,7 @@ const Contact = () => {
   const contact = {
     first: "Your",
     last: "Name",
-    avatar: "https://placekitten.com/200/200",
+    avatar: "https://placekitten.com/200/300",
     twitter: "your_handle",
     notes: "Some notes",
     favorites: true,
